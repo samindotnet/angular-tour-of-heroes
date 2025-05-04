@@ -9,7 +9,7 @@ import { catchError, map, tap } from 'rxjs';
   providedIn: 'root'
 })
 export class HeroService {
-  private heroesUrl = 'api/heroes'
+  private heroesUrl = 'http://localhost:3000/api/heroes'
   constructor(
     private http: HttpClient,
     private messageService:MessageService) { }

@@ -26,9 +26,6 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroesComponent,
     HeroDetailComponent,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryDataService, {dataEncapsulation: false}
-    )
   ],
   providers: [
     provideClientHydration(withEventReplay())
